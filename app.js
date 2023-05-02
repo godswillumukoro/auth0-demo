@@ -4,12 +4,12 @@ const indexRouter = require('./routes/index.js')
 const { auth } = require('express-openid-connect');
 
 const config = {
-    authRequired: false,
-    auth0Logout: true,
-    secret: process.env.SECRET,
-    baseURL: 'http://localhost:3000',
-    clientID: process.env.CLIENTID,
-    issuerBaseURL: process.env.ISSUER
+  authRequired: false,
+  auth0Logout: true,
+  secret: process.env.SECRET,
+  baseURL: process.env.BASEURL,
+  clientID: process.env.CLIENTID,
+  issuerBaseURL: process.env.ISSUER
 };
 
 const app = express()
