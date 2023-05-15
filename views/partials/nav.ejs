@@ -1,0 +1,11 @@
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/app-admin">Admin</a></li>
+    <% if(!isAuthenticated) { %>
+    <li><a href="/login">login</a></li>
+    <% } else { %>
+    <li><a href="/logout">logout</a></li>
+    <% } %>
+  </ul>
+</nav>
